@@ -227,47 +227,47 @@ function getDataFormInputField() {
 const arr = [];
 
 function saveData() {
-    const title = document.querySelector('#form-title').textContent;
-    const _label = document.querySelector('.label input').value;
-    const _name = document.querySelector('.name input').value;
-    const _id = document.querySelector('.id input').value;
-    const _placeholder = document.querySelector('.placeholder input').value;
-    const _require = document.querySelector('.require input').value;
-    const _row = document.querySelector('.row').value;
-    const _column = document.querySelector('.column').value;
-    // console.log(title);
-    if (title == 'Input field') {
-        const FormInputField = new Object();
-        FormInputField.label = _label;
-        FormInputField.name = _name;
-        FormInputField.id = _id;
-        FormInputField.placeholder = _placeholder;
-        FormInputField.require = _require;
-        arr.push(FormInputField);
-        removeForm();
-    } 
-    else if (title == 'Textarea field') {
-        const FormTextareaField = new Object();
-        FormTextareaField.label = _label;
-        FormTextareaField.name = _name;
-        FormTextareaField.id = _id;
-        FormTextareaField.placeholder = _placeholder;
-        FormTextareaField.row = _row;
-        FormTextareaField.column = _column;
-        FormTextareaField.require = _require;
-        arr.push(FormTextareaField);
-        removeForm();
-    } 
-    else if (title == 'Button field') {
-        const FormButtonField = new Object();
-        FormButtonField.label = _label;
-        FormButtonField.name = _name;
-        FormButtonField.id = _id;
-        FormButtonField.placeholder = _placeholder;
-        FormButtonField.require = _require;
-        arr.push(FormButtonField);
-        removeForm();
-    }
+    // const title = document.querySelector('#form-title').textContent;
+    // const _label = document.querySelector('.label input').value;
+    // const _name = document.querySelector('.name input').value;
+    // const _id = document.querySelector('.id input').value;
+    // const _placeholder = document.querySelector('.placeholder input').value;
+    // const _require = document.querySelector('.require input').value;
+    // const _row = document.querySelector('.row').value;
+    // const _column = document.querySelector('.column').value;
+    // // console.log(title);
+    // if (title == 'Input field') {
+    //     const FormInputField = new Object();
+    //     FormInputField.label = _label;
+    //     FormInputField.name = _name;
+    //     FormInputField.id = _id;
+    //     FormInputField.placeholder = _placeholder;
+    //     FormInputField.require = _require;
+    //     arr.push(FormInputField);
+    //     removeForm();
+    // } 
+    // else if (title == 'Textarea field') {
+    //     const FormTextareaField = new Object();
+    //     FormTextareaField.label = _label;
+    //     FormTextareaField.name = _name;
+    //     FormTextareaField.id = _id;
+    //     FormTextareaField.placeholder = _placeholder;
+    //     FormTextareaField.row = _row;
+    //     FormTextareaField.column = _column;
+    //     FormTextareaField.require = _require;
+    //     arr.push(FormTextareaField);
+    //     removeForm();
+    // } 
+    // else if (title == 'Button field') {
+    //     const FormButtonField = new Object();
+    //     FormButtonField.label = _label;
+    //     FormButtonField.name = _name;
+    //     FormButtonField.id = _id;
+    //     FormButtonField.placeholder = _placeholder;
+    //     FormButtonField.require = _require;
+    //     arr.push(FormButtonField);
+    //     removeForm();
+    // }
  
-    console.log(arr);
+    // console.log(arr);
 }
