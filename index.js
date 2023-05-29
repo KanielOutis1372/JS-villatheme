@@ -2,8 +2,6 @@
 var count = 0;
 
 function addFormInput() {
-    count++;
-    // console.log(count);
     var getWrapRight = document.getElementById('wrap-right');
     console.log(getWrapRight);
     const formBuild = document.createElement('div');
@@ -28,27 +26,39 @@ function addFormInput() {
 
                 <div class="group label">
                     <label for="">Label</label>
-                    <input type="text">
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
                 </div>
 
                 <div class="group name">
                     <label for="">Name</label>
-                    <input type="text">
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
                 </div>
 
                 <div class="group id">
                     <label for="">Id</label>
-                    <input type="text">
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
                 </div>
 
                 <div class="group placeholder">
                     <label for="">Placeholder</label>
-                    <input type="text">
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
                 </div>
 
                 <div class="group require">
                     <label for="">Require</label>
-                    <span>
+                    <span class="span-check">
                         <input type="checkbox">
                     </span>
                 </div>
@@ -59,8 +69,6 @@ function addFormInput() {
 }
 
 function addFormTextarea() {
-    count++;
-    // console.log(count);
     var getWrapRight = document.getElementById('wrap-right');
     console.log(getWrapRight);
     const formBuild = document.createElement('div');
@@ -72,7 +80,7 @@ function addFormTextarea() {
                 <button id="form-exit" onClick="removeForm()">X</button>
             </div>
             <div id="form-body">
-                <div class="group">
+                <div class="group type">
                     <label for="">Type</label>
                     <select name="" id="">
                         <option value="textarea">textarea</option>
@@ -81,27 +89,39 @@ function addFormTextarea() {
 
                 <div class="group label">
                     <label for="">Label</label>
-                    <input type="text">
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
                 </div>
 
                 <div class="group name">
                     <label for="">Name</label>
-                    <input type="text">
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
                 </div>
 
                 <div class="group id">
                     <label for="">Id</label>
-                    <input type="text">
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
                 </div>
 
                 <div class="group placeholder">
                     <label for="">Placeholder</label>
-                    <input type="text">
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
                 </div>
 
                 <div class="group row">
-                <label for="">Row</label>
-                <input type="number" value="0" min=0>
+                    <label for="">Row</label>
+                    <input type="number" value="0" min=0>
                 </div>
 
                 <div class="group column">
@@ -111,7 +131,7 @@ function addFormTextarea() {
 
                 <div class="group require">
                     <label for="">Require</label>
-                    <span>
+                    <span class="span-check">
                         <input type="checkbox">
                     </span>
                 </div>
@@ -122,61 +142,69 @@ function addFormTextarea() {
 }
 
 function addFormButton() {
-    count++;
-    // console.log(count);
     var getWrapRight = document.getElementById('wrap-right');
     console.log(getWrapRight);
     const formBuild = document.createElement('div');
     formBuild.classList.add('form-build');
     formBuild.innerHTML = `
-    <div id="form-wrap">
-        <div id="form-head">
-            <div id="form-title">Button field</div>
-            <button id="form-exit" onClick="removeForm()">X</button>
+        <div id="form-wrap">
+            <div id="form-head">
+                <div id="form-title">Button field</div>
+                <button id="form-exit" onClick="removeForm()">X</button>
+            </div>
+            <div id="form-body">
+                <div class="group type">
+                    <label for="">Type</label>
+                    <select name="" id="">
+                        <option value="button">button</option>
+                    </select>
+                </div>
+
+                <div class="group label">
+                    <label for="">Label</label>
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="group name">
+                    <label for="">Name</label>
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="group id">
+                    <label for="">Id</label>
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="group placeholder">
+                    <label for="">Placeholder</label>
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="group require">
+                    <label for="">Require</label>
+                    <span class="span-check">
+                        <input type="checkbox">
+                    </span>
+                </div>
+            </div>
         </div>
-        <div id="form-body">
-            <div class="group">
-                <label for="">Type</label>
-                <select name="" id="">
-                    <option value="button">button</option>
-                </select>
-            </div>
-
-            <div class="group label">
-                <label for="">Label</label>
-                <input type="text">
-            </div>
-
-            <div class="group name">
-                <label for="">Name</label>
-                <input type="text">
-            </div>
-
-            <div class="group id">
-                <label for="">Id</label>
-                <input type="text">
-            </div>
-
-            <div class="group placeholder">
-                <label for="">Placeholder</label>
-                <input type="text">
-            </div>
-
-            <div class="group require">
-                <label for="">Require</label>
-                <span>
-                    <input type="checkbox">
-                </span>
-            </div>
-        </div>
-    </div>
     `;
     getWrapRight.appendChild(formBuild);
 }
 
 function removeForm() {
-    count--;
-    // console.log(count);
     var formBuild = document.querySelector('.form-build');
     formBuild.parentElement.removeChild(formBuild);    
 }
@@ -303,6 +331,29 @@ loadData();
 function validate(element) {
     element.querySelector('.label input').value;
 }
+
+function isEmpty() {
+    var label = document.querySelector('.label label');
+    label.addEventListener('blur', () => {
+        if (label.trim() === '') {
+            var error = label.parentNode.querySelector('span');
+            error.innerHTML = 'This field cannot be empty!';
+            error.style.color = 'red';
+        }
+    });
+    
+}
+
+
+function name(params) {
+    
+}
+
+
+
+
+
+
 
 
 function isValidPhoneNumber(value) {

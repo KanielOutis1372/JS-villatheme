@@ -84,9 +84,9 @@ html {
 
 .group select,
 .group input,
-span {
+.span-check {
     flex-basis: 78%;
-    margin-bottom: 14px;
+    
 }
 
 .group select,
@@ -98,7 +98,7 @@ span {
     
 }
 
-span {
+.span-check {
     position: relative;
 }
 
@@ -110,4 +110,18 @@ span {
 
 #form-wrap {
     padding: 12px 12px 0;
+}
+
+.wrap-input {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 78%;
+    margin-bottom: 14px;
+}
+
+.group.type, 
+.group.require,
+.group.row,
+.group.column {
+    margin-bottom: 14px;
 }
